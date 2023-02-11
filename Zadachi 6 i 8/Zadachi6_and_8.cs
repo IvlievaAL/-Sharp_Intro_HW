@@ -34,9 +34,9 @@ else
                     even[indexEvenPositive]=CurrentNumber;
                     CurrentNumber=CurrentNumber+2;
                     indexEvenPositive=indexEvenPositive+1;
-                    Console.WriteLine("итерация");
                    }
-                 Console.WriteLine(even);
+                 var array1=string.Join(",", even);
+                 Console.WriteLine(array1);
               }
               }
         else
