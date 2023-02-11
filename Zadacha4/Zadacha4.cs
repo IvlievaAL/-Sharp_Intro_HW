@@ -3,3 +3,13 @@
 //2, 3, 7 -> 7
 //44 5 78 -> 78
 //22 3 9 -> 22
+Console.WriteLine("Enter number1: ");
+string StrNumber1 = Console.ReadLine();
+int number1 = Convert.ToInt32(StrNumber1);
+Console.WriteLine("Enter number2: ");
+string StrNumber2 = Console.ReadLine();
+int number2 = Convert.ToInt32(StrNumber2);
+Console.WriteLine("Enter number3: ");
+string StrNumber3 = Console.ReadLine();
+int number3 = Convert.ToInt32(StrNumber3);
+int max = number1
