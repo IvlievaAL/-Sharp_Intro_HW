@@ -40,9 +40,11 @@ else
               }
               }
         else
+          {
           Console.WriteLine("нечетное");
           int ModuleUneven = Math.Abs(N);
           int[] uneven = new int[((ModuleUneven-1)/2+1)];
           Console.WriteLine((ModuleUneven-1)/2);
+          }
       }
  }    
