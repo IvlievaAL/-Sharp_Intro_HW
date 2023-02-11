@@ -18,10 +18,12 @@ else
  if (number1>number2)
   {
    max=number1;
+   Console.WriteLine("max =");
    Console.WriteLine(max);
   }
   else 
   {
    max=number2;
+   Console.WriteLine("max =");
    Console.WriteLine(max);
   }
