@@ -8,5 +8,7 @@
 Console.WriteLine("Enter N: ");
 string StrN = Console.ReadLine();
 int N = Convert.ToInt32(StrN);
-if (N=1)
-  Console.WriteLine("Нет таких чисел");
+if (N==1)
+  {
+    Console.WriteLine("Нет таких чисел");
+  }
