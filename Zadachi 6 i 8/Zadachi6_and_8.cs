@@ -22,9 +22,9 @@ else
       {
         if ((N % 2)==0)
          {
-            Console.WriteLine("положительно");
+            Console.WriteLine("четное");
          }
         else
-          Console.WriteLine("отрицательно");
+          Console.WriteLine("нечетное");
       }
   }
