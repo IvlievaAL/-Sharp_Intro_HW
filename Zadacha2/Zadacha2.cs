@@ -9,3 +9,19 @@ int number1 = Convert.ToInt32(StrNumber1);
 Console.WriteLine("Enter number2: ");
 string StrNumber2 = Console.ReadLine();
 int number2 = Convert.ToInt32(StrNumber2);
+int max;
+if (number1==number2)
+{
+    Console.WriteLine("Numbers are equal");
+}
+else
+ if (number1>number2)
+  {
+   max=number1;
+   Console.WriteLine(max);
+  }
+  else 
+  {
+   max=number2;
+   Console.WriteLine(max);
+  }
