@@ -57,7 +57,20 @@ else
           Console.WriteLine("нечетное");
           int ModuleUneven = Math.Abs(N);
           int[] uneven = new int[((ModuleUneven-1)/2+1)];
-          Console.WriteLine((ModuleUneven-1)/2);
+          uneven[0]=0;
+          if (N>0)
+              {
+               int CurrentNumber=2;
+               int indexUnevenPositive=1;
+                 while (CurrentNumber<=N-1)
+                   {
+                    uneven[indexUnevenPositive]=CurrentNumber;
+                    CurrentNumber=CurrentNumber+2;
+                    indexUnevenPositive=indexUnevenPositive+1;
+                   }
+                 var array3=string.Join(",", uneven);
+                 Console.WriteLine(array3);
+              }
           }
       }
  }    
