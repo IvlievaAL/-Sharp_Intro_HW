@@ -23,6 +23,9 @@ else
         if ((N % 2)==0)
          {
             Console.WriteLine("четное");
+            int ModuleEven = Math.Abs(N);
+            int[] even = new int[(ModuleEven/2)];
+            Console.WriteLine(ModuleEven/2);
          }
         else
           Console.WriteLine("нечетное");
