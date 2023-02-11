@@ -18,4 +18,13 @@ else
       {
         Console.WriteLine("0");
       }
+    else 
+      {
+        if ((N % 2)==0)
+         {
+            Console.WriteLine("положительно");
+         }
+        else
+          Console.WriteLine("отрицательно");
+      }
   }
