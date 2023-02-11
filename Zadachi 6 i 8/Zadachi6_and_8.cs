@@ -12,3 +12,10 @@ if (N==1)
   {
     Console.WriteLine("Нет таких чисел");
   }
+else
+  {
+    if (N==0|N==-1)
+      {
+        Console.WriteLine("0");
+      }
+  }
