@@ -38,6 +38,19 @@ else
                  var array1=string.Join(",", even);
                  Console.WriteLine(array1);
               }
+            else 
+              {
+               int CurrentNumber=-2;
+               int indexEvenNegative=0;
+               while (CurrentNumber>=N)
+                   {
+                    even[indexEvenNegative]=CurrentNumber;
+                    CurrentNumber=CurrentNumber-2;
+                    indexEvenNegative=indexEvenNegative+1;
+                   }
+                 var array2=string.Join(",", even);
+                 Console.WriteLine(array2);
+              }
               }
         else
           {
