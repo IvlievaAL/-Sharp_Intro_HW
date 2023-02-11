@@ -23,8 +23,10 @@ if (number2>max)
     Console.WriteLine(max);
   }
     else 
-    Console.WriteLine("max =");
-    Console.WriteLine(max);
+    {
+      Console.WriteLine("max =");
+      Console.WriteLine(max);
+    }
 }
 else
   if (number3>max)
@@ -34,5 +36,7 @@ else
     Console.WriteLine(max);
   }
   else 
-  Console.WriteLine("max =");
-  Console.WriteLine(max);
+  {
+    Console.WriteLine("max =");
+   Console.WriteLine(max);
+   }
