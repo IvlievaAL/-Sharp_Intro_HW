@@ -13,7 +13,7 @@ if (N==1)
     Console.WriteLine("Нет таких чисел");
   }
 else
-  {
+ {
     if (N==0|N==-1)
       {
         Console.WriteLine("0");
@@ -25,12 +25,24 @@ else
             Console.WriteLine("четное");
             int ModuleEven = Math.Abs(N);
             int[] even = new int[(ModuleEven/2)];
-            Console.WriteLine(ModuleEven/2);
-         }
+            if (N>0)
+              {
+               int CurrentNumber=2;
+               int indexEvenPositive=0;
+                 while (CurrentNumber<=N)
+                   {
+                    even[indexEvenPositive]=CurrentNumber;
+                    CurrentNumber=CurrentNumber+2;
+                    indexEvenPositive=indexEvenPositive+1;
+                    Console.WriteLine("итерация");
+                   }
+                 Console.WriteLine(even);
+              }
+              }
         else
           Console.WriteLine("нечетное");
           int ModuleUneven = Math.Abs(N);
           int[] uneven = new int[((ModuleUneven-1)/2+1)];
           Console.WriteLine((ModuleUneven-1)/2);
       }
-  }
+ }    
