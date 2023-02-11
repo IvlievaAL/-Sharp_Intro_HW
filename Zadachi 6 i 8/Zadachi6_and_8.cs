@@ -56,13 +56,11 @@ else
         else
           {
           Console.WriteLine("нечетное");
-          int ModuleUneven = Math.Abs(N);
-          int[] uneven = new int[((ModuleUneven-1)/2+1)];
-          uneven[0]=0;
-          if (N>0)
+           if (N>0)
               {
+               int[] uneven = new int[(N-1)/2];
                int CurrentNumber=2;
-               int indexUnevenPositive=1;
+               int indexUnevenPositive=0;
                  while (CurrentNumber<=N-1)
                    {
                     uneven[indexUnevenPositive]=CurrentNumber;
@@ -71,6 +69,21 @@ else
                    }
                  var array3=string.Join(",", uneven);
                  Console.WriteLine(array3);
+              }
+            else
+              {
+                int ModuleUneven = Math.Abs(N);
+               int[] uneven = new int[(ModuleUneven/2)+1];
+               int CurrentNumber=-2;
+               int indexUnevenNegative=1;
+               while (CurrentNumber>=N)
+                   {
+                    uneven[indexUnevenNegative]=CurrentNumber;
+                    CurrentNumber=CurrentNumber-2;
+                    indexUnevenNegative=indexUnevenNegative+1;
+                   }
+                 var array4=string.Join(",", uneven);
+                 Console.WriteLine(array4);
               }
           }
       }
