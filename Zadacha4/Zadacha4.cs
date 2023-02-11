@@ -13,20 +13,26 @@ Console.WriteLine("Enter number3: ");
 string StrNumber3 = Console.ReadLine();
 int number3 = Convert.ToInt32(StrNumber3);
 int max = number1;
-if number2>max
+if (number2>max)
 {
     max=number2;
     if (number3>max)
   {
     max=number3;
+    Console.WriteLine("max =");
     Console.WriteLine(max);
   }
-    else Console.WriteLine(max);
+    else 
+    Console.WriteLine("max =");
+    Console.WriteLine(max);
 }
 else
   if (number3>max)
   {
     max=number3;
+    Console.WriteLine("max =");
     Console.WriteLine(max);
   }
-  else Console.WriteLine(max);
+  else 
+  Console.WriteLine("max =");
+  Console.WriteLine(max);
