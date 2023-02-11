@@ -23,10 +23,9 @@ else
         if ((N % 2)==0)
          {
             Console.WriteLine("четное");
-            int ModuleEven = Math.Abs(N);
-            int[] even = new int[(ModuleEven/2)];
             if (N>0)
               {
+               int[] even = new int[(N/2)];
                int CurrentNumber=2;
                int indexEvenPositive=0;
                  while (CurrentNumber<=N)
@@ -40,8 +39,10 @@ else
               }
             else 
               {
+               int ModuleEven = Math.Abs(N);
+               int[] even = new int[(ModuleEven/2)+1];
                int CurrentNumber=-2;
-               int indexEvenNegative=0;
+               int indexEvenNegative=1;
                while (CurrentNumber>=N)
                    {
                     even[indexEvenNegative]=CurrentNumber;
